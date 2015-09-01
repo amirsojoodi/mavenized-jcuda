@@ -29,6 +29,11 @@
         </dependency>
         <dependency>
             <groupId>jcuda</groupId>
+            <artifactId>jcudpp</artifactId>
+            <version>${jcuda.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jcuda</groupId>
             <artifactId>jcurand</artifactId>
             <version>${jcuda.version}</version>
         </dependency>
@@ -300,6 +305,13 @@
                 <dependency>
                     <groupId>jcuda</groupId>
                     <artifactId>libJCufft</artifactId>
+                    <version>${jcuda.version}</version>
+                    <classifier>${libJ.version}</classifier>
+                    <type>so</type>
+                </dependency>
+                <dependency>
+                    <groupId>jcuda</groupId>
+                    <artifactId>libJCudpp</artifactId>
                     <version>${jcuda.version}</version>
                     <classifier>${libJ.version}</classifier>
                     <type>so</type>
